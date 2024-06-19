@@ -7,21 +7,21 @@ header {
 }
 
 .navbar-toggler{
-    background-color: teal;
+    /* background-color: teal; */
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
 }
 
-.sm-icons {
-    flex-direction: row;
-    color: white;
-}
 .sm-icons .nav-link {
     padding-right: 1em;
     color: white;
 }
 
 .socialmedia{
-    background-color: blue;
+    /* background-color: blue; */
+}
+
+.sm-icons{
+    color: white;
 }
