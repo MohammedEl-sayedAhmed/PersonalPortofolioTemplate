@@ -17,13 +17,10 @@ header {
     color: #20c997; /* Active link color */
 }
 
-.navbar-toggler {
-    border: none;
-    outline: none;
-}
-
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.navbar-toggler:hover {
     box-shadow: none;
+    border-color: #20c997;
 }
 
 .sm-icons .nav-link {
@@ -35,9 +32,11 @@ header {
 
 .nav-item {
     border-bottom: 1px solid #64626236;
+    margin-right: 25px;
 }
 
-.nav-item a:hover{
+.nav-item a:hover,
+.nav-item a:focus{
      color: #20c997 !important;
 }
 
@@ -60,7 +59,51 @@ header {
     color: #3B5998;
 }
 
-
 .bi-dribbble:hover{
     color: #ea4c89;
+}
+
+.home{
+    margin-top: 10em;
+}
+
+.text-1{
+    color: #FFFF;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.text-2{
+    color: #FFFF;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.text-3{
+    color: #DEE3E4;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.shadow-none{
+    box-shadow: none !important;
+}
+
+.hire-btn{
+    color: #20c997;
+    border: 2px solid #20c997;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 10px 30px;
+    word-spacing: 1px;
+    margin: 30px 0px;
+
+}
+
+.hire-btn:hover,
+.hire-btn:focus{
+    background-color: #20c997;
+    border: 2px solid #20c997;
+    color: #FAFAFAE6;
 }
