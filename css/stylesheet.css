@@ -1,16 +1,18 @@
+/* ---------------------------- Start: Header Section ---------------------------- */
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/intro-bg.jpg);
+    background-image: linear-gradient(rgba(17, 19, 23, 0.8), rgba(17, 19, 23, 0.8)), url(../images/intro-bg.jpg);
     background-size: cover; /* Make the background cover the entire area */
-    background-position: top; /* Center the background image */
-    background-attachment: fixed;
+    background-position: top center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image during scroll */
     background-repeat: no-repeat; /* Do not repeat the image */
-    height: 100vh; /* optional: Set body height to 100 viewport height */
 }
+/* ----------------------------- End: Header Section ----------------------------- */
 
+/* ---------------------------- Start: Navbar Section ---------------------------- */
 .navbar-dark .navbar-nav .nav-link {
-    color: #FAFAFAE6;
-    font-size: 1em;
-    font-weight: 500;
+    color: #FAFAFAE6; /* Text color for navigation links */
+    font-size: 1em; /* Font size for navigation links */
+    font-weight: 500; /* Font weight for navigation links */
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -19,91 +21,117 @@ header {
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-    box-shadow: none;
-    border-color: #20c997;
+    box-shadow: none; /* Remove box-shadow on focus or hover */
+    border-color: #20c997; /* Border color on focus or hover */
 }
+/* ----------------------------- End: Navbar Section ----------------------------- */
 
+/* ---------------------------- Start: Social Icons Section ---------------------------- */
 .sm-icons .nav-link {
-    color: #FAFAFAE6;
-    font-size: 1.5em;
-    padding: 13.6px 0;
-    padding-right: 1.2em;
+    color: #FAFAFAE6; /* Text color for social media icons */
+    font-size: 1.5em; /* Font size for social media icons */
+    padding: 13.6px 0; /* Vertical padding for social media icons */
+    padding-right: 1.2em; /* Right padding for social media icons */
 }
 
+.sm-icons {
+    display: flex; /* Display social media icons in a flex container */
+    flex-direction: row; /* Arrange social media icons in a row */
+    /* padding-bottom: 1em; */ /* Optional bottom padding */
+}
+
+.bi-twitter:hover {
+    color: #00ACEE; /* Color on hover for Twitter icon */
+}
+
+.bi-facebook:hover {
+    color: #3B5998; /* Color on hover for Facebook icon */
+}
+
+.bi-dribbble:hover {
+    color: #ea4c89; /* Color on hover for Dribbble icon */
+}
+/* ----------------------------- End: Social Icons Section ----------------------------- */
+
+/* ---------------------------- Start: Navigation Item Section ---------------------------- */
 .nav-item {
-    border-bottom: 1px solid #64626236;
-    margin-right: 25px;
+    border-bottom: 1px solid #64626236; /* Bottom border for navigation items */
+    margin-right: 25px; /* Right margin for navigation items */
 }
 
 .nav-item a:hover,
-.nav-item a:focus{
-     color: #20c997 !important;
+.nav-item a:focus {
+    color: #20c997 !important; /* Color on hover or focus for navigation items */
 }
 
 .navbar-collapse {
-    padding-left: 25px;
-    /* background-color: rgba(0, 0, 0, 0.0); */    
+    padding-left: 25px; /* Left padding for navbar collapse */
+    /* background-color: rgba(0, 0, 0, 0.0); */ /* Optional background color */
+}
+/* ----------------------------- End: Navigation Item Section ----------------------------- */
+
+/* ---------------------------- Start: Home Section ---------------------------- */
+.home {
+    margin-top: 10em; /* Top margin for the home section */
 }
 
-.sm-icons{
-    display: flex;
-    flex-direction: row;
-    /* padding-bottom: 1em; */
+.text-1 {
+    color: #FFFF; /* Text color for text-1 */
+    font-size: 1.4em; /* Font size for text-1 */
+    font-weight: 600; /* Font weight for text-1 */
 }
 
-.bi-twitter:hover{
-    color: #00ACEE;
+.text-2 {
+    color: #FFFF; /* Text color for text-2 */
+    font-size: 2.2em; /* Font size for text-2 */
+    font-weight: 600; /* Font weight for text-2 */
 }
 
-.bi-facebook:hover{
-    color: #3B5998;
+.text-3 {
+    color: #DEE3E4; /* Text color for text-3 */
+    font-size: 1.1em; /* Font size for text-3 */
+    font-weight: 300; /* Font weight for text-3 */
 }
 
-.bi-dribbble:hover{
-    color: #ea4c89;
+.shadow-none {
+    box-shadow: none !important; /* Remove box-shadow */
 }
 
-.home{
-    margin-top: 10em;
-}
-
-.text-1{
-    color: #FFFF;
-    font-size: 1.4em;
-    font-weight: 600;
-}
-
-.text-2{
-    color: #FFFF;
-    font-size: 2.2em;
-    font-weight: 600;
-}
-
-.text-3{
-    color: #DEE3E4;
-    font-size: 1.1em;
-    font-weight: 300;
-}
-
-.shadow-none{
-    box-shadow: none !important;
-}
-
-.hire-btn{
-    color: #20c997;
-    border: 2px solid #20c997;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 1em;
-    padding: 10px 30px;
-    word-spacing: 1px;
-    margin: 30px 0px;
-
+.hire-btn {
+    color: #20c997; /* Text color for hire button */
+    border: 2px solid #20c997; /* Border color for hire button */
+    letter-spacing: 1px; /* Letter spacing for hire button */
+    font-weight: 500; /* Font weight for hire button */
+    font-size: 1em; /* Font size for hire button */
+    padding: 10px 30px; /* Padding for hire button */
+    word-spacing: 1px; /* Word spacing for hire button */
+    margin: 30px 0px; /* Margin for hire button */
 }
 
 .hire-btn:hover,
-.hire-btn:focus{
-    background-color: #20c997;
-    border: 2px solid #20c997;
-    color: #FAFAFAE6;
+.hire-btn:focus {
+    background-color: #20c997; /* Background color on hover or focus */
+    border: 2px solid #20c997; /* Border color on hover or focus */
+    color: #FAFAFAE6; /* Text color on hover or focus */
 }
+
+.typed-output-container {
+    display: inline-block; /* Ensure the text and cursor are inline */
+}
+
+.typed-output {
+    display: inline; /* Make sure the cursor is inline with the text */
+    color: #FFFF; /* Text color for typed output */
+    font-size: 2.2em; /* Font size for typed output */
+    font-weight: 600; /* Font weight for typed output */
+}
+
+.typed-cursor {
+    display: inline; /* Make sure the cursor is inline with the text */
+    color: #FFFF; /* Text color for typed cursor */
+    font-size: 2.2em; /* Font size for typed cursor */
+    font-weight: 600; /* Font weight for typed cursor */
+    opacity: 1; /* Opacity for typed cursor */
+    animation: blink 0.7s infinite; /* Blink animation for typed cursor */
+}
+/* ----------------------------- End: Home Section ----------------------------- */
