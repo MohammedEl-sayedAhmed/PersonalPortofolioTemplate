@@ -1,7 +1,7 @@
 function initializeTypingEffect() 
 {
     var options = {
-        strings: ["I am Mohammed", "I am a Freelancer", "I am a developer"],
+        strings: ["I am Mohammed", "I am a Freelancer.", "I am a developer."],
         typeSpeed: 70,
         backSpeed: 50,
         backDelay: 1500,
