@@ -1,137 +1,251 @@
+/* ---------------------------- Start: Global styles ---------------------------- */
+* {
+  font-family: "Poppins", sans-serif; /* Set the default font family to 'Poppins' for all elements, falling back to sans-serif if 'Poppins' is unavailable */
+  scroll-behavior: smooth; /* Enable smooth scrolling for all elements when navigating to different sections of the page */
+  list-style: none; /* Remove default list styling (bullets/numbers) from all list elements */
+}
+
+:root {
+  --primary-color: #20c997; /* Primary color */
+  --secondary-color: #fafafae6; /* Secondary color */
+  --white-color: #ffff; /* White color */
+  --offWhite-color: #dee3e4; /* Off-white color */
+  --dark-color: #212529; /* Dark color */
+}
+
+/* Text color utilities */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-white {
+  color: var(--white-color) !important; /* Text color for text-white */
+}
+
+.text-offWhite {
+  color: var(--offWhite-color) !important; /* Text color for text-offWhite */
+}
+
+.text-dark {
+  color: var(--dark-color) !important; /* Text color for text-dark */
+}
+
+/* Custom text styles */
+.text-1 {
+  color: var(--white-color) !important; /* Text color for text-1 */
+  font-size: 1.4em; /* Font size for text-1 */
+  font-weight: 600; /* Font weight for text-1 */
+}
+
+.text-2 {
+  color: var(--white-color) !important; /* Text color for text-2 */
+  font-size: 2.2em; /* Font size for text-2 */
+  font-weight: 600; /* Font weight for text-2 */
+}
+
+.text-3 {
+  color: var(--offWhite-color) !important; /* Text color for text-3 */
+  font-size: 1.1em; /* Font size for text-3 */
+  font-weight: 300; /* Font weight for text-3 */
+}
+
+.text-4 {
+  color: var(--dark-color) !important; /* Text color for text-4 */
+  font-size: 1.75rem; /* Font size for text-4 */
+  font-weight: 600; /* Font weight for text-4 */
+}
+
+.text-5 {
+  color: #4c4d4d !important; /* Text color for text-5 */
+  font-size: 1em; /* Font size for text-5 */
+  font-weight: 400; /* Font weight for text-5 */
+}
+
+.section {
+  margin-top: 10em; /* Top margin for any section */
+}
+/* ---------------------------- End: Global styles ---------------------------- */
+
 /* ---------------------------- Start: Header Section ---------------------------- */
 header {
-    background-image: linear-gradient(rgba(17, 19, 23, 0.8), rgba(17, 19, 23, 0.8)), url(../images/intro-bg.jpg);
-    background-size: cover; /* Make the background cover the entire area */
-    background-position: top center; /* Center the background image */
-    background-attachment: fixed; /* Fix the background image during scroll */
-    background-repeat: no-repeat; /* Do not repeat the image */
+  background-image: linear-gradient(rgba(17, 19, 23, 0.8), rgba(17, 19, 23, 0.8)), url(../images/intro-bg.jpg);
+  background-size: cover; /* Make the background cover the entire area */
+  background-position: top center; /* Center the background image */
+  background-attachment: fixed; /* Fix the background image during scroll */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
 /* ----------------------------- End: Header Section ----------------------------- */
 
 /* ---------------------------- Start: Navbar Section ---------------------------- */
 .navbar-dark .navbar-nav .nav-link {
-    color: #FAFAFAE6; /* Text color for navigation links */
-    font-size: 1em; /* Font size for navigation links */
-    font-weight: 500; /* Font weight for navigation links */
+  color: var(--secondary-color); /* Text color for navigation links */
+  font-size: 1em; /* Font size for navigation links */
+  font-weight: 500; /* Font weight for navigation links */
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #20c997; /* Active link color */
+  color: var(--primary-color); /* Active link color */
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-    box-shadow: none; /* Remove box-shadow on focus or hover */
-    border-color: #20c997; /* Border color on focus or hover */
+  box-shadow: none; /* Remove box-shadow on focus or hover */
+  border-color: var(--primary-color); /* Border color on focus or hover */
 }
 /* ----------------------------- End: Navbar Section ----------------------------- */
 
 /* ---------------------------- Start: Social Icons Section ---------------------------- */
 .sm-icons .nav-link {
-    color: #FAFAFAE6; /* Text color for social media icons */
-    font-size: 1.5em; /* Font size for social media icons */
-    padding: 13.6px 0; /* Vertical padding for social media icons */
-    padding-right: 1.2em; /* Right padding for social media icons */
+  color: var(--secondary-color); /* Text color for social media icons */
+  font-size: 1.5em; /* Font size for social media icons */
+  padding: 13.6px 0; /* Vertical padding for social media icons */
+  padding-right: 1.2em; /* Right padding for social media icons */
 }
 
 .sm-icons {
-    display: flex; /* Display social media icons in a flex container */
-    flex-direction: row; /* Arrange social media icons in a row */
-    /* padding-bottom: 1em; */ /* Optional bottom padding */
+  display: flex; /* Display social media icons in a flex container */
+  flex-direction: row; /* Arrange social media icons in a row */
+  /* padding-bottom: 1em; */ /* Optional bottom padding */
 }
 
 .bi-twitter:hover {
-    color: #00ACEE; /* Color on hover for Twitter icon */
+  color: #00acee; /* Color on hover for Twitter icon */
 }
 
 .bi-facebook:hover {
-    color: #3B5998; /* Color on hover for Facebook icon */
+  color: #3b5998; /* Color on hover for Facebook icon */
 }
 
 .bi-dribbble:hover {
-    color: #ea4c89; /* Color on hover for Dribbble icon */
+  color: #ea4c89; /* Color on hover for Dribbble icon */
 }
 /* ----------------------------- End: Social Icons Section ----------------------------- */
 
 /* ---------------------------- Start: Navigation Item Section ---------------------------- */
 .nav-item {
-    border-bottom: 1px solid #64626236; /* Bottom border for navigation items */
-    margin-right: 25px; /* Right margin for navigation items */
+  border-bottom: 1px solid #64626236; /* Bottom border for navigation items */
+  margin-right: 25px; /* Right margin for navigation items */
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: #20c997 !important; /* Color on hover or focus for navigation items */
+  color: var(--primary-color) !important; /* Color on hover or focus for navigation items */
 }
 
 .navbar-collapse {
-    padding-left: 25px; /* Left padding for navbar collapse */
-    /* background-color: rgba(0, 0, 0, 0.0); */ /* Optional background color */
+  padding-left: 25px; /* Left padding for navbar collapse */
+  /* background-color: rgba(0, 0, 0, 0.0); */ /* Optional background color */
 }
 /* ----------------------------- End: Navigation Item Section ----------------------------- */
 
 /* ---------------------------- Start: Home Section ---------------------------- */
-.home {
-    margin-top: 10em; /* Top margin for the home section */
-}
-
-.text-1 {
-    color: #FFFF; /* Text color for text-1 */
-    font-size: 1.4em; /* Font size for text-1 */
-    font-weight: 600; /* Font weight for text-1 */
-}
-
-.text-2 {
-    color: #FFFF; /* Text color for text-2 */
-    font-size: 2.2em; /* Font size for text-2 */
-    font-weight: 600; /* Font weight for text-2 */
-}
-
-.text-3 {
-    color: #DEE3E4; /* Text color for text-3 */
-    font-size: 1.1em; /* Font size for text-3 */
-    font-weight: 300; /* Font weight for text-3 */
-}
-
 .shadow-none {
-    box-shadow: none !important; /* Remove box-shadow */
+  box-shadow: none !important; /* Remove box-shadow */
 }
 
 .hire-btn {
-    color: #20c997; /* Text color for hire button */
-    border: 2px solid #20c997; /* Border color for hire button */
-    letter-spacing: 1px; /* Letter spacing for hire button */
-    font-weight: 500; /* Font weight for hire button */
-    font-size: 1em; /* Font size for hire button */
-    padding: 10px 30px; /* Padding for hire button */
-    word-spacing: 1px; /* Word spacing for hire button */
-    margin: 30px 0px; /* Margin for hire button */
+  color: var(--primary-color); /* Text color for hire button */
+  border: 2px solid var(--primary-color); /* Border color for hire button */
+  letter-spacing: 1px; /* Letter spacing for hire button */
+  font-weight: 500; /* Font weight for hire button */
+  font-size: 1em; /* Font size for hire button */
+  padding: 10px 30px; /* Padding for hire button */
+  word-spacing: 1px; /* Word spacing for hire button */
+  margin: 30px 0px; /* Margin for hire button */
 }
 
 .hire-btn:hover,
 .hire-btn:focus {
-    background-color: #20c997; /* Background color on hover or focus */
-    border: 2px solid #20c997; /* Border color on hover or focus */
-    color: #FAFAFAE6; /* Text color on hover or focus */
+  background-color: var(--primary-color); /* Background color on hover or focus */
+  border: 2px solid var(--primary-color); /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
 }
 
 .typed-output-container {
-    display: inline-block; /* Ensure the text and cursor are inline */
+  display: inline-block; /* Ensure the text and cursor are inline */
 }
 
 .typed-output {
-    display: inline; /* Make sure the cursor is inline with the text */
-    color: #FFFF; /* Text color for typed output */
-    font-size: 2.2em; /* Font size for typed output */
-    font-weight: 600; /* Font weight for typed output */
+  display: inline; /* Make sure the cursor is inline with the text */
+  color: var(--white-color) !important; /* Text color for typed output */
+  font-size: 2.2em; /* Font size for typed output */
+  font-weight: 600; /* Font weight for typed output */
 }
 
 .typed-cursor {
-    display: inline; /* Make sure the cursor is inline with the text */
-    color: #FFFF; /* Text color for typed cursor */
-    font-size: 2.2em; /* Font size for typed cursor */
-    font-weight: 600; /* Font weight for typed cursor */
-    opacity: 1; /* Opacity for typed cursor */
-    animation: blink 0.7s infinite; /* Blink animation for typed cursor */
+  display: inline; /* Make sure the cursor is inline with the text */
+  color: var(--white-color) !important; /* Text color for typed cursor */
+  font-size: 2.2em; /* Font size for typed cursor */
+  font-weight: 600; /* Font weight for typed cursor */
+  opacity: 1; /* Opacity for typed cursor */
+  animation: blink 0.7s infinite; /* Blink animation for typed cursor */
 }
 /* ----------------------------- End: Home Section ----------------------------- */
+
+/* ----------------------------- Start: About Section ----------------------------- */
+.section-title {
+  padding: 20px 0; /* Padding for section title */
+}
+
+.section-title h1 {
+  font-size: 140px; /* Font size for section title heading */
+  font-weight: 600; /* Font weight for section title heading */
+  color: var(--offWhite-color) !important; /* Text color for section title heading */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+.section-title p {
+  font-size: 2.25rem !important; /* Font size for section title paragraph */
+  font-weight: 600 !important; /* Font weight for section title paragraph */
+  color: var(--dark-color) !important; /* Text color for section title paragraph */
+  position: relative; /* Positioning for pseudo-element */
+  padding-bottom: 2px; /* Bottom padding for section title paragraph */
+}
+
+.section-title p::after {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Positioning pseudo-element absolutely */
+  height: 2px; /* Height of pseudo-element */
+  width: 30%; /* Width of pseudo-element */
+  bottom: 0; /* Align to bottom of parent */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering transform */
+  background-color: var(--primary-color); /* Background color for pseudo-element */
+}
+
+.section-sub-title h2 {
+  font-size: 28px; /* Font size for section subtitle heading */
+  font-weight: 600; /* Font weight for section subtitle heading */
+}
+
+.section-sub-title p {
+  margin: 0 0 16px; /* Margin for section subtitle paragraph */
+}
+
+.section-data ul {
+  list-style-type: none; /* Remove default list item markers (bullets/numbers) */
+  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to the list */
+  padding-top: 12px; /* Add padding at the top of the list */
+  padding-bottom: 12px; /* Add padding at the bottom of the list */
+}
+
+.section-data ul li {
+  padding: 12px 0px; /* Add vertical padding to each list item */
+}
+
+.section-data ul li a {
+  text-decoration: none; /* Remove default underline from links */
+  color: var(--primary-color); /* Set the link text color to the primary color */
+  padding: 12px 0px; /* Add vertical padding to each link */
+}
+
+.data-value {
+  font-weight: 600; /* Set the font weight to 600 for a bolder appearance */
+  margin: 0px 8px 0px 0px; /* Add right margin of 8px to the data-value element */
+}
+
+/* ----------------------------- End: About Section ----------------------------- */

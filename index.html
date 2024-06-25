@@ -37,7 +37,10 @@
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0)">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="images/logo-light.png" alt="Simone Logo" />
+            <!-- <img src="images/logo-light.png" alt="Simone Logo" /> -->
+            <section id="logo" class="d-flex justify-content-center align-items-center">
+              <h3 class="text-white">Mohammed</h3>
+            </section>
           </a>
           <button
             class="navbar-toggler border-1 shadow-lg"
@@ -56,7 +59,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">What I do</a>
@@ -91,19 +94,60 @@
       <!-- ------------------------------ End: Nav Bar Section ------------------------------ -->
 
       <!-- ----------------------------- Start: Home Section ----------------------------- -->
-      <section class="home">
-        <div class="homeInfo d-flex flex-column justify-content-center align-items-center text-center text-1">
+      <section class="section">
+        <div class="home d-flex flex-column justify-content-center align-items-center text-center text-1">
           <div class="p-2 text-1">Welcome</div>
           <div class="typed-output-container p-2">
             <div class="typed-output"></div>
           </div>
-          <div class="p-2 text-3">based in Los Angeles, California.</div>
+          <div class="p-2 text-3">based in Cairo, Egypt.</div>
           <a href="#" class="btn hire-btn btn-outline-primary rounded-pill shadow-none">Hire Me</a>
         </div>
       </section>
       <!-- ------------------------------ End: Home Section ------------------------------ -->
     </header>
     <!-- ------------------------------ End: Header Section ------------------------------ -->
+
+    <!-- ----------------------------- Start: About Section ----------------------------- -->
+    <section id="about" class="section">
+      <div class="section-title d-flex flex-column align-items-center position-relative">
+        <h1>About Me</h1>
+        <p class="position-absolute top-50 start-50 translate-middle">Know Me More</p>
+      </div>
+      <div class="container section-info">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-lg-7 col-xl-8 text-center text-lg-start section-sub-title">
+            <h2 class="text-4 mb-3">I'm <span class="text-primary">Mohammed Elsayed,</span> a Web Developer</h2>
+            <p class="text-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque amet necessitatibus quia consequatur
+              vero. Libero explicabo ullam magnam. Numquam commodi facilis dolorem rem deserunt autem. Nesciunt magnam
+              iure repellat. At explicabo praesentium expedita necessitatibus. Libero temporibus aspernatur aliquid
+              delectus laborum. Repellendus sequi, inventore voluptas repudiandae, totam minima facilis a aliquid,
+              expedita ullam doloremque? Earum dolores repudiandae omnis praesentium pariatur!
+            </p>
+            <p class="text-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis laudantium nam sit fuga
+              aut. Atque, sint consequatur quia praesentium sunt earum, nam, nemo maxime at dolorem odio iste aut.
+              Eligendi tempore ut dignissimos architecto temporibus! Officia molestiae eos earum? Sequi itaque
+              cupiditate, fugit quae, temporibus doloremque, aperiam obcaecati sed inventore a minima officiis sapiente
+              consequatur provident nihil eum exercitationem. Molestias ab iusto perferendis ad in mollitia eaque rem
+              architecto eum nesciunt debitis, ex vel maxime id beatae facilis ipsum nobis, reiciendis libero fugiat
+              saepe, aut praesentium autem. Nobis, ducimus?
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-5 col-xl-4 section-data">
+            <ul>
+              <li><span class="data-value me-2 text-5">Name:</span>Mohammed Elsayed</li>
+              <li><span class="data-value me-2 text-5">Email:</span><a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a></li>
+              <li><span class="data-value me-2 text-5">Age:</span>28</li>
+              <li><span class="data-value me-2 text-5">From:</span>Cairo, Egypt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------ End: About Section ------------------------------ -->
 
     <!-- Include the separate JavaScript file -->
     <script src="js/main.js"></script>
