@@ -11,6 +11,7 @@
   --white-color: #ffff; /* White color */
   --offWhite-color: #dee3e4; /* Off-white color */
   --dark-color: #212529; /* Dark color */
+  --grey-color: #6c757d; /* grey color */
 }
 
 /* Text color utilities */
@@ -228,13 +229,13 @@ header {
 
 .section-data ul {
   list-style-type: none; /* Remove default list item markers (bullets/numbers) */
-  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to the list */
   padding-top: 12px; /* Add padding at the top of the list */
   padding-bottom: 12px; /* Add padding at the bottom of the list */
 }
 
 .section-data ul li {
-  padding: 12px 0px; /* Add vertical padding to each list item */
+  padding: 10px 0px; /* Add vertical padding to each list item */
+  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to each list entry */
 }
 
 .section-data ul li a {
@@ -246,6 +247,48 @@ header {
 .data-value {
   font-weight: 600; /* Set the font weight to 600 for a bolder appearance */
   margin: 0px 8px 0px 0px; /* Add right margin of 8px to the data-value element */
+}
+
+.dw-cv-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color); /* Text color for dw-cv button */
+  border: 2px solid var(--secondary-color); /* Border color for dw-cv button */
+  letter-spacing: 1px; /* Letter spacing for dw-cv button */
+  font-weight: 500; /* Font weight for dw-cv button */
+  font-size: 1em; /* Font size for dw-cv button */
+  padding: 12.8px 41.6px; /* Padding for dw-cv button */
+  word-spacing: 1px; /* Word spacing for dw-cv button */
+  margin: 30px 0px; /* Margin for dw-cv button */
+  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to each list entry */
+}
+
+.dw-cv-btn:hover,
+.dw-cv-btn:focus {
+  background-color: #1aae83; /* Background color on hover or focus */
+  border: 2px solid #1aae83; /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-kpi {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.featured-box {
+  border-right: 2px solid var(--offWhite-color);
+  color: var(--offWhite-color);
+}
+
+.featured-box h4 {
+  color: var(--grey-color);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.container .row > .col-6:nth-last-child(1) .featured-box {
+  border: none;
 }
 
 /* ----------------------------- End: About Section ----------------------------- */
