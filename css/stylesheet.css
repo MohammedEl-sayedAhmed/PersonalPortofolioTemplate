@@ -287,6 +287,12 @@ header {
   font-weight: 500; /* Font weight set to 500 */
 }
 
+.featured-box p {
+  color: var(--dark-color); /* Text color set to dark */
+  font-size: 20px; /* Font size set to 20px */
+  font-weight: 400; /* Font weight set to 400 */
+}
+
 /* Remove the border-right for the last '.col-6' element within a '.row' inside a '.container' */
 .container .row > .col-6:nth-last-child(1) .featured-box {
   border: none; /* Remove border for the last column */
