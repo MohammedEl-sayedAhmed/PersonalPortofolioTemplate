@@ -271,24 +271,25 @@ header {
 }
 
 .section-kpi {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  padding-top: 20px; /* Top padding for the section */
+  padding-bottom: 20px; /* Bottom padding for the section */
+  position: relative; /* Position set to relative for positioning child elements */
 }
 
 .featured-box {
-  border-right: 2px solid var(--offWhite-color);
-  color: var(--offWhite-color);
+  border-right: 2px solid var(--offWhite-color); /* Right border with off-white color */
+  color: var(--offWhite-color); /* Text color set to off-white */
 }
 
 .featured-box h4 {
-  color: var(--grey-color);
-  font-size: 40px;
-  font-weight: 500;
+  color: var(--grey-color); /* Text color set to grey */
+  font-size: 40px; /* Font size set to 40px */
+  font-weight: 500; /* Font weight set to 500 */
 }
 
+/* Remove the border-right for the last '.col-6' element within a '.row' inside a '.container' */
 .container .row > .col-6:nth-last-child(1) .featured-box {
-  border: none;
+  border: none; /* Remove border for the last column */
 }
 
 /* ----------------------------- End: About Section ----------------------------- */
