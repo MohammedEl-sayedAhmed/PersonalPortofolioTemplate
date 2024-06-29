@@ -277,6 +277,8 @@ header {
 }
 
 .featured-box {
+  box-sizing: border-box;
+  position: relative;
   border-right: 2px solid var(--offWhite-color); /* Right border with off-white color */
   color: var(--offWhite-color); /* Text color set to off-white */
 }
@@ -299,3 +301,67 @@ header {
 }
 
 /* ----------------------------- End: About Section ----------------------------- */
+
+/* ----------------------------- Start: Services Section ----------------------------- */
+/* .srv-item {
+  display: inline;
+  text-align: center;
+  background: var(--white-color);
+  border: 1px solid #f0f2f3;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.srv-icon {
+  display: inline;
+  font-size: 48px;
+  min-width: 55px;
+  min-height: 55px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #4c4d4d;
+  border-radius: 0;
+} */
+
+.srv-item {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  background: var(--white-color);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.srv-icon {
+  font-size: 30px;
+  padding: 15px 20px;
+  color: #4c4d4d;
+  border-radius: 8px;
+  min-width: 55px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.srv-content {
+  margin-left: 15px;
+}
+
+.srv-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.srv-content p {
+  margin: 0;
+  color: #4c4d4d;
+  font-size: 1rem;
+}
+
+/* ----------------------------- End: Services Section ----------------------------- */
