@@ -95,7 +95,7 @@
 }
 
 .section:first-of-type {
-  margin-top: 10em;
+  padding-top: 10em;
 }
 .section:nth-of-type(even) {
   background-color: #f8f9fa;
