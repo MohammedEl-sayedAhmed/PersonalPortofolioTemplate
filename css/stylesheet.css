@@ -56,8 +56,8 @@
 
 .text-4 {
   color: var(--dark-color) !important; /* Text color for text-4 */
-  font-size: 1.75rem; /* Font size for text-4 */
-  font-weight: 600; /* Font weight for text-4 */
+  font-size: 1.75rem !important; /* Font size for text-4 */
+  font-weight: 600 !important; /* Font weight for text-4 */
 }
 
 .text-5 {
@@ -66,8 +66,39 @@
   font-weight: 400; /* Font weight for text-5 */
 }
 
+.text-6 {
+  color: var(--dark-color);
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
+}
+
+.text-7 {
+  color: var(--dark-color);
+  font-size: 24px !important;
+  font-size: 1.2rem !important;
+}
+
+.text-8 {
+  color: var(--white-color) !important; /* Text color for text-2 */
+  font-size: 0.875rem !important; /* Font size for text-2 */
+}
+
+.text-9 {
+  color: var(--dark-color);
+  font-size: 1em !important;
+  font-weight: 500 !important;
+}
+
 .section {
   margin-top: 10em; /* Top margin for any section */
+  padding-bottom: 3em;
+}
+.section:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+.section:nth-of-type(odd) {
+  background-color: none;
 }
 /* ---------------------------- End: Global styles ---------------------------- */
 
@@ -259,7 +290,6 @@ header {
   padding: 12.8px 41.6px; /* Padding for dw-cv button */
   word-spacing: 1px; /* Word spacing for dw-cv button */
   margin: 30px 0px; /* Margin for dw-cv button */
-  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to each list entry */
 }
 
 .dw-cv-btn:hover,
@@ -301,67 +331,83 @@ header {
 }
 
 /* ----------------------------- End: About Section ----------------------------- */
-
 /* ----------------------------- Start: Services Section ----------------------------- */
-/* .srv-item {
-  display: inline;
-  text-align: center;
-  background: var(--white-color);
-  border: 1px solid #f0f2f3;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 
-.srv-icon {
-  display: inline;
-  font-size: 48px;
-  min-width: 55px;
-  min-height: 55px;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-  color: #4c4d4d;
-  border-radius: 0;
-} */
-
+/* Styling for service items */
 .srv-item {
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  background: var(--white-color);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease-in-out;
-  padding: 1rem;
-  border-radius: 8px;
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  text-align: left; /* Align text to the left */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties over 0.3s */
+  padding: 1rem; /* Padding around each service item */
+  border-radius: 8px; /* Rounded corners */
 }
 
+/* Icon styling */
 .srv-icon {
-  font-size: 30px;
-  padding: 15px 20px;
-  color: #4c4d4d;
-  border-radius: 8px;
-  min-width: 55px;
-  min-height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 30px; /* Icon font size */
+  padding: 15px 20px; /* Padding around the icon */
+  color: #4c4d4d; /* Icon color */
+  border-radius: 8px; /* Rounded corners */
+  min-width: 55px; /* Minimum width */
+  min-height: 55px; /* Minimum height */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items to the center */
+  justify-content: center; /* Justify content to the center */
 }
 
+/* Content container */
 .srv-content {
-  margin-left: 15px;
+  margin-left: 15px; /* Left margin for content */
 }
 
+/* Title styling */
 .srv-content h3 {
-  margin: 0;
-  font-size: 1.5rem;
+  margin: 0; /* Remove margin */
+  font-size: 1.5rem; /* Title font size */
 }
 
+/* Text styling */
 .srv-content p {
-  margin: 0;
-  color: #4c4d4d;
-  font-size: 1rem;
+  margin: 0; /* Remove margin */
+  color: #4c4d4d; /* Text color */
+  font-size: 1rem; /* Text font size */
 }
 
 /* ----------------------------- End: Services Section ----------------------------- */
+
+/* ----------------------------- Start: Resume Section ----------------------------- */
+
+/* Badge styling */
+.badge {
+  font-size: 1.25em; /* Badge font size */
+  background-color: var(--primary-color) !important; /* Background color for badge */
+}
+
+/* Progress bar styling */
+.progress-bar {
+  background-color: var(--primary-color) !important; /* Background color for progress bar */
+}
+
+/* Button styling for DW-CV */
+.dw-cv-skill-btn {
+  background-color: var(--secondary-color); /* Background color for DW-CV button */
+  color: var(--grey-color); /* Text color for DW-CV button */
+  border: 2px solid var(--grey-color); /* Border color for DW-CV button */
+  font-weight: 500; /* Font weight for DW-CV button */
+  font-size: 1em; /* Font size for DW-CV button */
+  padding: 12.8px 41.6px; /* Padding for DW-CV button */
+  word-spacing: 1px; /* Word spacing for DW-CV button */
+  margin: 30px 0px; /* Margin for DW-CV button */
+}
+
+/* Button hover/focus state styling */
+.dw-cv-skill-btn:hover,
+.dw-cv-skill-btn:focus {
+  background-color: var(--grey-color); /* Background color on hover or focus */
+  border: 2px solid var(--grey-color); /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow on hover or focus */
+}
+
+/* ----------------------------- End: Resume Section ----------------------------- */
