@@ -1,7 +1,7 @@
 /* ---------------------------- Start: Global styles ---------------------------- */
 * {
   font-family: "Poppins", sans-serif; /* Set the default font family to 'Poppins' for all elements, falling back to sans-serif if 'Poppins' is unavailable */
-  scroll-behavior: smooth; /* Enable smooth scrolling for all elements when navigating to different sections of the page */
+  scroll-behavior: auto; /* Enable smooth scrolling for all elements when navigating to different sections of the page */
   list-style: none; /* Remove default list styling (bullets/numbers) from all list elements */
 }
 
@@ -90,8 +90,7 @@
 }
 
 .section {
-  margin: 1em 1em; /* Top margin for any section */
-  padding-bottom: 1em;
+  padding: 3em 0em;
 }
 
 .section:first-of-type {
@@ -132,7 +131,6 @@ header {
   box-shadow: none; /* Remove box-shadow on focus or hover */
   border-color: var(--primary-color); /* Border color on focus or hover */
 }
-/* ----------------------------- End: Navbar Section ----------------------------- */
 
 /* ---------------------------- Start: Social Icons Section ---------------------------- */
 .sm-icons .nav-link {
@@ -177,6 +175,7 @@ header {
   /* background-color: rgba(0, 0, 0, 0.0); */ /* Optional background color */
 }
 /* ----------------------------- End: Navigation Item Section ----------------------------- */
+/* ----------------------------- End: Navbar Section ----------------------------- */
 
 /* ---------------------------- Start: Home Section ---------------------------- */
 .shadow-none {
@@ -413,5 +412,97 @@ header {
   color: var(--secondary-color); /* Text color on hover or focus */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow on hover or focus */
 }
-
 /* ----------------------------- End: Resume Section ----------------------------- */
+/* ----------------------------- Start: Portfolio Section ----------------------------- */
+
+.brands-grid {
+  overflow: hidden;
+}
+
+.brands-grid > .row > * {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.brands-grid.separator-border > .row > *:after, .brands-grid.separator-border > .row > *:before {
+  content: '';
+  position: absolute;
+}
+
+.brands-grid.separator-border > .row > *:after {
+  width: 100%;
+  height: 0;
+  top: auto;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px dotted #e0dede;
+}
+
+.brands-grid.separator-border > .row > *:before {
+  height: 100%;
+  top: 0;
+  left: -1px;
+  border-left: 1px dotted #e0dede;
+}
+
+.brands-grid.separator-border.separator-border-light > .row > *:after {
+  border-bottom: 1px dotted rgba(250, 250, 250, 0.15);
+}
+
+.brands-grid.separator-border.separator-border-light > .row > *:before {
+  border-left: 1px dotted rgba(250, 250, 250, 0.15);
+}
+
+
+.portfolio .portfolio-box {
+  position: relative;
+}
+
+.portfolio .portfolio-box .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-box .portfolio-overlay {
+  text-align: center;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio .portfolio-box .portfolio-img img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-img img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.portfolio .portfolio-box .portfolio-overlay-details {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio .portfolio-details {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+/* ----------------------------- End: Portfolio Section ----------------------------- */
