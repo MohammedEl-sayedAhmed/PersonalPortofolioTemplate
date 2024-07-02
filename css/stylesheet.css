@@ -125,11 +125,14 @@ header {
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--primary-color); /* Active link color */
 }
-
-.navbar-toggler:focus,
-.navbar-toggler:hover {
+.navbar-toggler{
+  box-shadow: none;
+}
+.navbar-toggler-btn:focus,
+.navbar-toggler-btn:hover {
   box-shadow: none; /* Remove box-shadow on focus or hover */
   border-color: var(--primary-color); /* Border color on focus or hover */
+
 }
 
 /* ---------------------------- Start: Social Icons Section ---------------------------- */
@@ -144,6 +147,12 @@ header {
   display: flex; /* Display social media icons in a flex container */
   flex-direction: row; /* Arrange social media icons in a row */
   /* padding-bottom: 1em; */ /* Optional bottom padding */
+}
+
+@media (width < 992px) {
+  .sm-icon-wide-screen {
+    display: none;
+  }
 }
 
 .bi-twitter:hover {
