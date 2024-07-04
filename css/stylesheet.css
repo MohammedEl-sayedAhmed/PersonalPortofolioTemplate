@@ -125,14 +125,13 @@ header {
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--primary-color); /* Active link color */
 }
-.navbar-toggler{
+.navbar-toggler {
   box-shadow: none;
 }
 .navbar-toggler-btn:focus,
 .navbar-toggler-btn:hover {
   box-shadow: none; /* Remove box-shadow on focus or hover */
   border-color: var(--primary-color); /* Border color on focus or hover */
-
 }
 
 /* ---------------------------- Start: Social Icons Section ---------------------------- */
@@ -439,3 +438,8 @@ header {
   opacity: 1;
 }
 /* ----------------------------- End: Portfolio Section ----------------------------- */
+/* ----------------------------- Start: Client Section ----------------------------- */
+.client-feedback {
+  background-color: #f8f9fa;
+}
+/* ----------------------------- End: Client Section ----------------------------- */
