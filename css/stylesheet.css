@@ -449,6 +449,26 @@ header {
   color: var(--primary-color);
 }
 
+.fa-dribbble:hover {
+  color: #ea4c89; /* Color on hover for Dribbble icon */
+}
+
+.fa-twitter:hover {
+  color: #00acee; /* Color on hover for Twitter icon */
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998; /* Color on hover for Facebook icon */
+}
+
+.fa-google:hover {
+  color: #c20806; /* Color on hover for Google icon */
+}
+
+.fa-github:hover {
+  color: #040204; /* Color on hover for Github icon */
+}
+
 .form-submit-btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);
