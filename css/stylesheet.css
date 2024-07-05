@@ -235,14 +235,14 @@ header {
 }
 
 .section-title h1 {
-  font-size: 140px; /* Font size for section title heading */
+  font-size: 5rem !important; /* Font size for section title heading */
   font-weight: 600; /* Font weight for section title heading */
   color: var(--offWhite-color) !important; /* Text color for section title heading */
   text-transform: uppercase; /* Transform text to uppercase */
 }
 
 .section-title p {
-  font-size: 2.25rem !important; /* Font size for section title paragraph */
+  font-size: 2rem !important; /* Font size for section title paragraph */
   font-weight: 600 !important; /* Font weight for section title paragraph */
   color: var(--dark-color) !important; /* Text color for section title paragraph */
   position: relative; /* Positioning for pseudo-element */
@@ -443,3 +443,29 @@ header {
   background-color: #f8f9fa;
 }
 /* ----------------------------- End: Client Section ----------------------------- */
+/* ----------------------------- Start: Contact Section ----------------------------- */
+
+.address-contacts i {
+  color: var(--primary-color);
+}
+
+.form-submit-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 12.8px 41.6px;
+  word-spacing: 1px;
+  margin: 30px 0px;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  background-color: #1aae83; /* Background color on hover or focus */
+  border: 2px solid #1aae83; /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* ----------------------------- End: Contact Section ----------------------------- */
