@@ -54,8 +54,8 @@ Feel free to use this template to create your own personal portfolio website. Yo
 To customize the template, follow these steps:
 
 1. **HTML**: Open the `index.html` file and update the content as needed.
-2. **CSS**: Open the `css/style.css` file and modify the styles to match your design preferences.
-3. **Bootstrap**: You can also customize the Bootstrap components by overriding the default styles in the `css/style.css` file.
+2. **CSS**: Open the `css/stylesheet.css` file and modify the styles to match your design preferences.
+3. **Bootstrap**: You can also customize the Bootstrap components by overriding the default styles in the `css/stylesheet.css` file.
 
 ## Contributing
 
