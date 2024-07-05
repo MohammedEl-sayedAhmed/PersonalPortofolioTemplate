@@ -14,7 +14,7 @@ This repository contains the code for a personal portfolio template, which is ba
 
 ## Demo
 
-You can view a live demo of the template [here](https://harnishdesign.net/demo/html/simone/index-classic-header.html#).
+You can view a live demo of the template [here](https://mohammedel-sayedahmed.github.io/PersonalPortofolioTemplate/).
 
 ## Features
 
